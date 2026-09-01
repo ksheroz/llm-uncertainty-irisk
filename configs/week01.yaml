@@ -1,0 +1,18 @@
+experiment:
+  name: semantic_entropy_pilot
+  paper: "Farquhar et al. (Nature, 2024)"
+
+model:
+  name: gemma3:4b
+  backend: ollama
+  temperature: 1.0
+  max_tokens: 100
+  n_samples: 10
+
+nli:
+  model: microsoft/deberta-large-mnli
+  max_length: 512
+
+data:
+  n_questions: 10
+  question_type: factoid_qa
