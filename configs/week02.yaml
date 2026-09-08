@@ -1,0 +1,27 @@
+experiment:
+  name: se_critical_evaluation
+  paper: "Farquhar et al. (Nature, 2024)"
+  extends: week01
+
+model:
+  name: gemma3-diverse
+  base: gemma3:4b
+  backend: ollama
+  temperature: 1.5  # baked via Modelfile
+  top_p: 0.95
+  top_k: 50
+  repeat_penalty: 1.2
+  max_tokens: 100
+  n_samples: 10
+
+nli:
+  model: microsoft/deberta-large-mnli
+  max_length: 512
+
+data:
+  easy_questions: 5
+  hard_questions: 10
+  total: 15
+
+baselines:
+  - naive_string_entropy

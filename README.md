@@ -53,8 +53,8 @@ ollama pull gemma3:4b
 | Week | Notebook | Focus |
 |------|----------|-------|
 | 1 | `notebooks/weekly/week01_semantic_entropy.ipynb` | Farquhar et al. (2024): math, implementation, pilot |
-| 2 | | Scale experiment, harder questions |
-| 3 | | Compare SE vs token-level entropy |
+| 2 | `notebooks/weekly/week02_se_critical_evaluation.ipynb` | Real generations, hard questions, SE vs naive baseline |
+| 3 | | Token-level log-prob SE variant, larger benchmark |
 
 ### Key References
 
